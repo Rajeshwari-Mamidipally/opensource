@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        String s=new String();
+        int c=1;
+        
+        for(int i=1;i<str.length();i++){
+        
+            if(str.charAt(i)==str.charAt(i-1)){
+                c++;
+                
+            }
+            
+            else{
+                s+=str.charAt(i-1);
+                s+=c;
+                c=1;
+            }
+        }
+        s+=str.charAt(str.length()-1);
+        s+=c;
+        System.out.println(s);
+    }
+}
