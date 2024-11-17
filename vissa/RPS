@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        char b=sc.next().charAt(0);
+        if(a=='R'&&b=='P'){
+            System.out.println("Charan");
+        }
+        else if(a=='P' && b=='S'){
+            System.out.println("Charan");
+        }
+        else if(a=='S' && b=='R'){
+            System.out.println("Charan");
+        }
+        else if(a=='P'&&b=='R'){
+            System.out.println("Vignesh");
+        }
+        else if(a=='S' && b=='P'){
+System.out.println("Vignesh");}
+        else if(a=='R' && b=='S'){
+            System.out.println("Vignesh");
+        }
+        else{
+            System.out.println("NULL");
+        }
+    }
+}
