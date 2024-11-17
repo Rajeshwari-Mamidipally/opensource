@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        double c=x-(x*0.1);
+        int d=x-100;
+        System.out.println((int)Math.min(c,d));
+    }
+}
